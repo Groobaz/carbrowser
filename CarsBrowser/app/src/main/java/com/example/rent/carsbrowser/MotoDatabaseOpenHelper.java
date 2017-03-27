@@ -61,7 +61,7 @@ public class MotoDatabaseOpenHelper extends SQLiteOpenHelper {
         return cursor;
     }
 
-    public Cursor searchQucery(CharSequence constraint) {
+    public Cursor searchQuery(CharSequence constraint) {
         Cursor cursor = getReadableDatabase().query(CarsTableContract.TABLE_NAME,
                 new String[]
                         {

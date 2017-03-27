@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         adapter.setFilterQueryProvider(new FilterQueryProvider() {
             @Override
             public Cursor runQuery(CharSequence constraint) {
-                return databaseOpenHelper.searchQucery(constraint);
+                return databaseOpenHelper.searchQuery(constraint);
             }
         });
         autoCompleteTextView.setAdapter(adapter);
